@@ -1,5 +1,5 @@
 {% set name = "python-yakh" %}
-{% set version = "0.3.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python_yakh-{{ version }}.tar.gz
-  sha256: bb43d6a77f271d32c242b6472f97b4b00c25c86e43b77595839fa3cbbf92e59c
+  sha256: 199d01424e1a127446df2f7a7e1212cf36a18343d071014ab82e145304a5987f
 
 build:
   noarch: python
