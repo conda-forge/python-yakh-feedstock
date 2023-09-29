@@ -1,11 +1,11 @@
-About python-yakh
-=================
+About python-yakh-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-yakh-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/petereon/yakh
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-yakh-feedstock/blob/main/LICENSE.txt)
 
 Summary: Yet Another Keypress Handler
 
