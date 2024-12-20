@@ -1,13 +1,13 @@
 {% set name = "python-yakh" %}
-{% set version = "0.3.2" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python_yakh-{{ version }}.tar.gz
-  sha256: f2833a4c00d9823b1e3b517b71bfcb672f81d4e9719f4326389cef38f5b1bfe3
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/python_yakh-{{ version }}.tar.gz
+  sha256: 8c4f88c697019985526b798c1648d5027974eaa0ca09a0add6528444aa3520ae
 
 build:
   noarch: python
@@ -18,9 +18,9 @@ requirements:
   host:
     - pip
     - poetry-core
-    - python >=3.7.8,<4.0
+    - python {{ python_min }}
   run:
-    - python >=3.7.8,<4.0
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -29,6 +29,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/petereon/yakh
